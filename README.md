@@ -8,7 +8,7 @@ A practical implementation covering **audio data preprocessing**, **feature extr
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project explores the fundamentals of audio processing for speech recognition applications. It progresses from synthetic audio signals to real-world recordings, applying state-of-the-art preprocessing pipelines and implementing a similarity-based audio comparison algorithm.
 
@@ -16,16 +16,16 @@ This project explores the fundamentals of audio processing for speech recognitio
 
 1. **Synthetic Audio Analysis**: Working with artificially generated audio signals to understand fundamental concepts (sampling rate, Fourier transforms, spectrograms).
 2. **Real Audio Preprocessing**: Applying the same pipeline to real speech recordings — filtering, framing, windowing, and normalization.
-3. **Audio Similarity Algorithm**: Building a system to compare audio clips and measure their acoustic similarity using techniques such as:
+3. **Audio Similarity Algorithm**: Building a system to compare audio clips and measure their acoustic similarity using:
    - **MFCCs** (Mel-Frequency Cepstral Coefficients)
    - **DTW** (Dynamic Time Warping) for temporal alignment
    - Spectral features (zero crossing rate, spectral centroid, etc.)
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
-```directory
+```
 speech-command-recognition/
 ├── P3_resuelta.ipynb     # Main notebook: exercises, implementation & experiments
 ├── recordings.tar.gz     # Archive of audio recordings used for experiments
@@ -34,33 +34,33 @@ speech-command-recognition/
 
 ---
 
-## 🔬 Audio Processing Pipeline
+## Audio Processing Pipeline
 
 ```
 Raw Audio (.wav)
-     │
-     ▼
+     |
+     v
 Pre-emphasis Filter
-     │
-     ▼
+     |
+     v
 Frame Segmentation (windowing)
-     │
-     ▼
+     |
+     v
 FFT / Short-Time Fourier Transform (STFT)
-     │
-     ▼
+     |
+     v
 Mel Filter Bank
-     │
-     ▼
+     |
+     v
 MFCC Feature Extraction
-     │
-     ▼
+     |
+     v
 Similarity / Classification
 ```
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 1. Extract recordings:
    ```bash
@@ -73,7 +73,7 @@ Similarity / Classification
 
 ---
 
-## 👥 Authors & License
+## Authors & License
 
-Developed as part of the **Voice and Dialogue Processing (TVD)** course at GIA.  
+Developed as part of the **Voice and Dialogue Processing (TVD)** course at GIA.
 Distributed under the **MIT License**.
